@@ -70,19 +70,10 @@
 /*ここまで*/
 
 /*メイン*/
-.main {
-  width: 100%;
-  height: 500px;
-  padding: 90px 150px;  /*上下に90px、左右に0pxの内側余白*/
-}
-
-.portfolio {
-  width: 100%;
-}
-
 .port-1 {
-  margin-top: 90px;
-  width: 100;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  width: 100%;
   color: #000000;
   margin: 0 auto;
   background-color: #ECEFF1;
@@ -114,13 +105,7 @@
   grid-template-columns: repeat(3, 300px); /* 3列に設定 */
   gap: 10px; /* グリッド間の間隔を設定 */
   justify-content: center; /* 中央揃え */
-  margin-bottom: 90px;
 }
-
-.portfolio-box {
-
-}
-
 
 .portfolio-box img {
   width: 300px;
@@ -128,7 +113,67 @@
   display: block;
 }
 
+.feature {
+  width: 100%;
+}
 
+.feat-1 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.feature-heading {
+  font-size: 32px;
+  color: #000000;
+  font-weight: bold; /* 太字に設定 */
+  text-align: center;
+}
+
+.feature-text {
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.feature-content {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: space-around; /* 要素間のスペースを均等に */
+  gap: 10px; /* 要素間の間隔 */
+}
+
+.feature-item {
+  width: 320px;
+  height: auto;
+  flex: 1; /* 各アイテムが均等に幅を取るように */
+  display: flex;
+  flex-direction: column; /* 垂直方向に並べる */
+  align-items: center; /* 中央揃え */
+  text-align: center;
+}
+
+.f-1 {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px; /* アイコンサイズの調整 */
+}
+
+.f-2 {
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.f-3 {
+  font-size: 16px;
+  color: #000000;
+  text-align: left;
+}
+  
 
 .footer {
   background-color: #EC715F;
