@@ -1,0 +1,142 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*ヘッダー*/
+/* header のスタイル */
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #EC715F; /* ヘッダーの背景色 */
+}
+
+/* nav のスタイル */
+.nav-list {
+  list-style: none; /* デフォルトのリストスタイルを解除 */
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* nav-list-item のスタイル */
+.nav-list-item {
+  font-size: 16px;
+  padding-left: 30px; /* リストアイテム間のスペース */
+  padding-right: 30px;
+}
+
+/* リンクのスタイル */
+.nav-list-item a {
+  text-decoration: none; /* リンクの下線を解除 */
+  color: #FAFAFA; /* リンクの文字色 */
+}
+/*ヘッダーはここまで*/
+
+/*メインビジュアル*/
+.main-visual {
+  width: 100%;
+  height: 650px;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  position: relative;
+}
+
+.main-visual-content {
+  position: absolute; /* 絶対位置を設定 */
+  top: 200px; /* 上から200px下に配置 */
+  left: 50%; /* 左右中央に配置 */
+  transform: translateX(-50%); /* 中央揃え */
+  text-align: center; /* テキストを中央揃え */
+  width: 100%; /* 全幅を使用 */
+}
+
+.main-visual-text {
+  font-size: 64px;
+  color: #FAFAFA;
+  font-weight: bold; /* 太字に設定 */
+}
+
+.main-visual-name {
+  font-size: 20px;
+  color: #FAFAFA;
+  margin-top: 10px;
+}
+/*ここまで*/
+
+/*メイン*/
+.main {
+  width: 100%;
+  height: 500px;
+  padding: 90px 150px;  /*上下に90px、左右に0pxの内側余白*/
+}
+
+.portfolio {
+  width: 100%;
+}
+
+.port-1 {
+  margin-top: 90px;
+  width: 100;
+  color: #000000;
+  margin: 0 auto;
+  background-color: #ECEFF1;
+}
+
+.portfolio-heading {
+  font-size: 32px;
+  color: #000000;
+  font-weight: bold; /* 太字に設定 */
+  text-align: center;
+}
+
+.portfolio-line {
+  height: 3px;
+  width: 70px;
+  color: #EC715F;
+  margin-bottom: 8px;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-contents {
+  display: grid;
+  grid-template-columns: repeat(3, 300px); /* 3列に設定 */
+  gap: 10px; /* グリッド間の間隔を設定 */
+  justify-content: center; /* 中央揃え */
+  margin-bottom: 90px;
+}
+
+.portfolio-box {
+
+}
+
+
+.portfolio-box img {
+  width: 300px;
+  height: 250px;
+  display: block;
+}
+
+
+
+.footer {
+  background-color: #EC715F;
+  color: #ffffff;
+  font-size: 16px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
