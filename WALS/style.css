@@ -117,11 +117,6 @@
   width: 100%;
 }
 
-.feat-1 {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
 .feature-heading {
   font-size: 32px;
   color: #000000;
@@ -141,6 +136,7 @@
   display: flex; /* フレックスボックスを使用 */
   justify-content: space-around; /* 要素間のスペースを均等に */
   gap: 10px; /* 要素間の間隔 */
+  margin-bottom: 90px;
 }
 
 .feature-item {
