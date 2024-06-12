@@ -2,6 +2,8 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <!--レスポンシブ対応用-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <script src="https://kit.fontawesome.com/e5fd4ead5a.js" crossorigin="anonymous"></script>
     <!-- CSSファイルの読み込み -->
@@ -23,6 +25,9 @@
             <li class="nav-list-item"><a href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
+        <div class="hamburger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
     </header>
 
@@ -225,6 +230,15 @@
             behavior: 'smooth'
           });
           history.pushState(null, null, `index.html#${targetId}`);
+        });
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navList = document.querySelector('.nav-list');
+
+        hamburgerMenu.addEventListener('click', function() {
+          navList.classList.toggle('active'); // 'active'クラスをトグルしてメニューの表示・非表示を切り替え
         });
       });
     </script>

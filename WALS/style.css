@@ -336,3 +336,47 @@
   justify-content: center;
   align-items: center;
 }
+
+/*レスポンシブ対応*/
+
+/* ハンバーガーメニューのスタイル */
+.hamburger-menu {
+  display: none;
+  color: #FAFAFA;
+  font-size: 5px;
+  cursor: pointer;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+   .hamburger-menu {
+    display: block; /* ハンバーガーメニューを表示 */
+  }
+  
+  .header {
+    height: 50px; /* 高さを50pxに変更 */
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%; /* 幅を90%に変更 */
+    padding: 10px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    width: 100%;
+  }
+
+  .nav-list-item {
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+}
